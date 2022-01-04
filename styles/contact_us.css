@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+.main_container{
+    display: flex;
+}
+.service_content{
+    flex:1;
+    /* background-color:turquoise; */
+    height: 100vh;
+    padding:30px;
+}
+.service_sidebar{
+    position: relative;
+    height:100vh;
+    min-width: 200px;
+    width:25%;
+    background-color: #D3E4CD;
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contact us */
+.container{
+	margin-top: 3rem;
+}
+.LG_text{
+	font: 700 9vh Roboto;
+	color:#518071;
+}
+.labelText {
+    margin-top: 1rem;
+    font: 300 16px Roboto;
+    color: #518071;
+}
+.epsText {
+    font: 500 2vh Roboto;
+    color: #518071;
+    font-weight: bold;
+}
+.icoon{
+	font-size: 36px;
+	color:#518071;
+}
+.cntct_crd{
+	background-color: rgb(113, 157, 26);
+}
+.cntct_crd label{
+	color: white;
+	font-weight: bold;
+}
+.cntct_crd .card-header{
+    font: 700 6vh Roboto;
+    color: #fff;
+}
+.form_round{
+	border-radius: 1rem;
+}
+
+/* Vertical Nav */
+.navigation{
+    top:0;
+    /* right: 0; */
+    display: flex;
+    align-items: center;
+    transition: transform 1s;
+    transition-timing-function: ease;
+}
+.navigation:hover{
+    transform: translateX(0%);
+}
+.vertical_nav{
+    /* background-color:rgba(255,255,255,0.7); */
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+    border-radius: 20px;
+}
+.vertical_nav a{
+    text-decoration: none;
+    color: white;
+}
+.vertical_nav .nav_dropdown{
+    padding: 10px 100px;
+    margin:5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color:rgb(135, 177, 51);
+    color:white;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px 2px #AFE1AF;
+    transition:transform 0.3s, background-color 0.6s;
+}
+.vertical_nav .nav_dropdown:hover{
+    transform: translateX(-20%);
+    background-color: #4d5f0c;
+    color: white;
+}
+.nav_dropdown{
+    position: relative;
+}
+.nav_dropdown_content{
+    visibility: hidden;
+    position: absolute;
+    z-index: 11;
+    right:100%;
+    top:0;
+    display: flex;
+    padding:10px 20px;
+    flex-direction: column;
+    transform: translateY(-20px);
+}
+.nav_dropdown_content a{
+    display: inline-block;
+    padding:10px 50px;
+    margin:10px 20px;
+    background-color:rgb(135, 177, 51) ;
+    border-radius: 20px;
+    white-space: nowrap;
+    color:white;
+    box-shadow: 0px 10px 15px 2px #AFE1AF;
+}
+.nav_dropdown_content a:hover{
+    background-color: #4d5f0c;
+}
+.nav_dropdown:hover .nav_dropdown_content{
+    visibility: visible;
+}
+/* End */
+
+
+.news_section{
+    flex:1
+}
